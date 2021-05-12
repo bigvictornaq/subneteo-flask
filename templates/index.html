@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .fakeimg {
+            height: 200px;
+
+        }
+
+        .jumbotron {
+            background-color: rgb(172, 204, 215);
+        }
+    </style>
+    <title>Subnetear ALV</title>
+</head>
+
+<body>
+    <div class="jumbotron text-center" style="margin-bottom:0 background-color: blue">
+        <h1>Subneteo de IPv4</h1>
+        <p>Se calcula subredes en esta pagina crack!!</p>
+    </div>
+    <div class="container" style="margin-top:30px">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>About Me</h2>
+                <h5>Photo of me:</h5>
+                <div class="fakeimg"><img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-1/p160x160/105359947_1589873367830800_1179607971425265404_o.jpg?_nc_cat=106&_nc_sid=dbb9e7&_nc_ohc=V7NobUqskdwAX8tguZ0&_nc_ht=scontent-dfw5-2.xx&tp=6&oh=5d7d5fd25e4765abfc1e7a0f27f64c39&oe=5F8EC8AE" alt=""></div>
+                <p>Tipo random,a lo mejor el hizo esto. Pero quien sabe crack!!</p>
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-8">
+                <h2>Calculadora Subneteo para IPv4</h2>
+
+                <div class="fakeimg"><img style=" height:200px" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1106b8b0-438e-47e4-b95a-ef2a5a312eb9/d52jvs2-98d1da49-b631-459f-83d1-60a32993c8c1.jpg/v1/fill/w_900,h_505,q_75,strp/ip_man__donnie_yen__by_jordi87-d52jvs2.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi8xMTA2YjhiMC00MzhlLTQ3ZTQtYjk1YS1lZjJhNWEzMTJlYjkvZDUyanZzMi05OGQxZGE0OS1iNjMxLTQ1OWYtODNkMS02MGEzMjk5M2M4YzEuanBnIiwid2lkdGgiOiI8PTkwMCIsImhlaWdodCI6Ijw9NTA1In1dXX0.tiPq6zbXXwQa2rVMBFUkVg2n7QFWArAX-x5poKxS7e8" class="img-fluid"></div>
+                <p>lsls</p>
+                <p>La calculadora de subred IP realiza cálculos de subred para el bloque de direcciones de red
+                    determina la dirección broadcast address, Rango de Ip utilizables y subnet
+                </p>
+                <br>
+
+                <p> IPNetwork debe ser en formato x.x.x.x/x ejemplo {10.0.0.0/8} y en la catidad de Subredes debe ser
+                    mayor o igual 1.</p>
+                <form class="form-inline" action="" method="POST">
+                   
+                    <label for="email2" class="mb-2 mr-sm-2">IP Network:</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="x.x.x.x/x"
+                        name="ip_network" >
+                    <label for="pwd2" class="mb-2 mr-sm-2">Cantidad De subredes:</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="pwd2" placeholder="solo numeros"
+                        name="subred" >
+                    <button type="submit" class="btn btn-primary mb-2" value="Submit">Calcular</button>
+                </form>
+                <br>
+                <h2>{{ip}}</h2>
+                <h2>{{red}}</h2>
+                <br>
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+
+                            <th>subred</th>
+                            <th>Ip utilizables</th>
+                            <th>Broadcast</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {% for ip in totalplay %}
+                        <tr>
+                            <td>{{ip.ip}}</td>
+                            <td>{{ip.ip_utilizables}}</td>
+                            <td>{{ip.broadcast}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <p>KKKKK</p>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
